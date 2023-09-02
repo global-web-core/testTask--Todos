@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react';
 import {faker} from '@faker-js/faker';
 import {Helpers} from '../../globals';
 import {TodoProps} from './Todo.props';
+import {wordInTag} from '../../globals/constants/constants';
 
 export const Todo = ({title, completed}: TodoProps): JSX.Element => {
   const [titleTodo, setTitleTodo] = useState('')
@@ -18,8 +19,8 @@ export const Todo = ({title, completed}: TodoProps): JSX.Element => {
     setDescription(faker.lorem.text());
     setStartDate(Helpers.getDate());
     setEndDate(Helpers.getDate());
-    setTagBright(Helpers.capitalizeFirstLetter(faker.lorem.words({ min: 1, max: 2 })));
-    setTagLight(Helpers.capitalizeFirstLetter(faker.lorem.words({ min: 1, max: 2 })));
+    setTagBright(Helpers.capitalizeFirstLetter(faker.lorem.words({ min: wordInTag.min, max:  wordInTag.max })));
+    setTagLight(Helpers.capitalizeFirstLetter(faker.lorem.words({ min: wordInTag.min, max: wordInTag.max })));
     setTitleTodo(Helpers.capitalizeFirstLetter(title));
   }
 

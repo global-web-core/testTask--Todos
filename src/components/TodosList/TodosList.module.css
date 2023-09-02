@@ -57,6 +57,6 @@
   color: var(--color-blackPrimary);
 }
 
-.listEmpty {
+.listEmpty, .loading {
   text-align: center;
 }
