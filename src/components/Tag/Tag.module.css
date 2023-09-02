@@ -1,0 +1,51 @@
+.tag {
+  border: none;
+  font-size: var(--fontSize-xs);
+  font-weight: var(--fontWeight-m);
+  line-height: var(--lineHeight-s);
+  text-align: left;
+  border-radius: var(--borderRadius-1);
+  position: relative;
+}
+
+.tag div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
+}
+
+.bright {
+  background-color: var(--color-entityTag);
+  color: var(--color-white);
+}
+
+.light {
+  border-color: var(--color-neuteralPrimary);
+  color: var(--color-grayDarkPrimary);
+  padding-right: 7px;
+}
+
+.triangleRight:after {
+  content: "";
+  right: -17px;
+  top: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  border-width: 10px;
+  border-radius: var(--borderRadius-1)
+}
+
+.triangleRight {
+  margin-right: 8px;
+}
+
+.light.triangleRight:after {
+  border-left-color: var(--color-neuteralPrimary);
+}
+
+.bright.triangleRight:after {
+  border-left-color: var(--color-entityTag);
+}

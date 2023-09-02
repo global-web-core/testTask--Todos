@@ -1,0 +1,83 @@
+.todo {
+  display: flex;
+  padding: 4px;
+  border-radius: var(--borderRadius-2);
+  background-color: var(--color-blue-2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-white);
+  border-radius: var(--borderRadius-2);
+  padding: 10px;
+  gap: 8px;
+}
+
+.header input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: var(--fontSize-m);
+  color: var(--color-blue);
+  font-size: var(--fontSize-m);
+  font-weight: var(--fontWeight-m);
+  line-height: var(--lineHeight-s-1);
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date div {
+  font-size: var(--fontSize-s);
+  font-weight: var(--fontWeight-m);
+  line-height: var(--lineHeight-s-1);
+  text-align: left;
+  color: var(--color-statuses);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
+}
+
+.description {
+  color: var(--color-blackPrimary);
+  font-size: var(--fontSize-s);
+  font-weight: var(--fontWeight-s);
+  line-height: var(--lineHeight-s-1);
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+  align-items: center;
+}
+
+.tags {
+  display: flex;
+  height: 20px;
+  gap: 4px;
+  margin-right: 10px;
+}

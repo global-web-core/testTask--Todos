@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button:hover, input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+:root {
+  /* Colors */
+  --color-statuses: #50B810;
+  --color-grayPrimary: #7B8AAB;
+  --color-blackPrimary: #555555;
+  --color-neuteralPrimary: #EBEEF6;
+  --color-blue: #3D8FEC;
+  --color-blue-2: #F4F8FF;
+  --color-white: #FFFFFF;
+  --color-entityTag: #B233A6;
+  --color-grayDarkPrimary: #616C82;
+
+
+  /* Font */
+  --fontSize-m: 14px;
+  --fontSize-s: 13px;
+  --fontSize-xs: 12px;
+  --fontWeight-m: 600;
+  --fontWeight-s: 400;
+  --lineHeight-m: 20px;
+  --lineHeight-s: 17px;
+  --lineHeight-s-1: 18px;
+
+  /* Border */
+  --border-1: 1px solid var(--color-grayPrimary);
+  --borderRadius-1: 4px;
+  --borderRadius-2: 7px;
+}

@@ -1,0 +1,62 @@
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 716px;
+}
+
+.header {
+  padding: 0 4px;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.cards {
+  display: grid;
+  gap: 8px;
+  overflow-y: scroll;
+}
+
+.date {
+  font-size: var(--fontSize-m);
+  font-weight: var(--fontWeight-m);
+  line-height: var(--lineHeight-m);
+  text-align: left;
+  color: var(--color-statuses);
+}
+
+.control {
+  display: flex;
+  gap: 8px;
+}
+
+.add {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  border-radius: var(--borderRadius-1);
+  background-color: var(--color-neuteralPrimary);
+  color: var(--color-blue);
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count {
+  width: 19px;
+  height: 19px;
+  border-radius: var(--borderRadius-1);
+  outline: var(--border-1);
+  text-align: center;
+  font-size: var(--fontSize-xs);
+  font-weight: var(--fontWeight-m);
+  line-height: var(--lineHeight-s);
+  color: var(--color-blackPrimary);
+}
+
+.listEmpty {
+  text-align: center;
+}
