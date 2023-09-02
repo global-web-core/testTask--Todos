@@ -1,4 +1,5 @@
 import axios from "axios";
+import { ITodo } from "../../typesAndInterfaces/interfaces";
 
 const domain = "https://jsonplaceholder.typicode.com";
 const entitie = "todos";
@@ -6,7 +7,7 @@ const entitie = "todos";
 const request = async (page: number) => {
 	const url = `${domain}/${entitie}?_page=${page}`;
 
-	const fetch = await axios.get(url, { 
+	const fetch: ITodo.Json[] | undefined = await axios.get(url, { 
 		headers: {
 			'Content-Type': 'application/json',
 		}

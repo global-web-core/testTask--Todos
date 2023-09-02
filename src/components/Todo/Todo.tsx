@@ -32,7 +32,7 @@ export const Todo = ({title, completed}: TodoProps): JSX.Element => {
       <div className={styles.todo}>
         <div className={styles.content}>
           <div className={styles.header}>
-            <div className={styles.title}><input type="checkbox" id="isActive" name="isActive" checked={isCompleted} onChange={() => setIsCompleted(!isCompleted)}/>{titleTodo}</div>
+            <div className={styles.title}><input type="checkbox" checked={isCompleted} onChange={() => setIsCompleted(!isCompleted)}/>{titleTodo}</div>
           </div>
           <div className={styles.date}>
             <div className={styles.startDate}>{startDate}</div>
